@@ -80,7 +80,10 @@ export default function SignInPage() {
 
             <button
               type="button"
-              onClick={() => router.push("/learn-more")}
+              onClick={() => {
+                router.prefetch("/learn-more");
+                setTimeout(() => router.push("/learn-more"), 0);
+              }}
               className="rounded-full border border-white/30 bg-black/40 px-8 py-3 text-sm font-semibold text-white/90 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-white/50 hover:bg-black/60 hover:text-white active:scale-95"
             >
               Learn More

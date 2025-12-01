@@ -72,7 +72,10 @@ export default function LearnMorePage() {
             <span className="text-white">DOU360</span>
           </div>
           <button
-            onClick={() => router.push("/signin")}
+            onClick={() => {
+              router.prefetch("/signin");
+              setTimeout(() => router.push("/signin"), 0);
+            }}
             className="rounded-full border border-white/30 bg-black/40 px-6 py-2 text-sm font-semibold text-white/90 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:text-white active:scale-95"
           >
             Back
