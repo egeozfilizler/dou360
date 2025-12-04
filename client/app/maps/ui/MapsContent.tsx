@@ -53,7 +53,7 @@ import { World } from "@/lib/world";
        <main className="flex w-full h-full flex-1 items-center justify-center">
         <div
           ref={containerRef}
-          className="h-[700px] w-full max-w-5xl rounded-2xl border border-zinc-800 bg-zinc-950/60 p-4 shadow-2xl shadow-black/60"
+          className="h-[70vh] w-full max-w-5xl rounded-2xl border border-zinc-800 bg-zinc-950/60 p-4 shadow-2xl shadow-black/60"
         />
        </main>
 
